@@ -6,9 +6,6 @@ find_package(Threads REQUIRED)
 
 set(VSOMEIP_NAME "vsomeip3")
 
-
-include_directories(${VSOMEIP_INCLUDE_DIRS})
-
 add_library(vsomeip_hello_world_service INTERFACE)
 target_sources(vsomeip_hello_world_service INTERFACE
     "${CMAKE_CURRENT_SOURCE_DIR}/hello_world_service.hpp"
